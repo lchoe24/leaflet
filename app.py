@@ -81,7 +81,7 @@ with tab_history:
     if not entries:
         st.info("No entries yet. Start journaling!")
     else:
-        for idx, entry in enumerate(entries):
+        for _, entry in enumerate(entries):
             with st.expander(f"📅 {entry['date']} - {get_mood_display(entry['mood'])}", expanded=False):
                 for msg in entry.get('messages', []):
                     role = "You" if msg['role'] == 'user' else "Leafy"

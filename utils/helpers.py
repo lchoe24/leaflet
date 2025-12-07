@@ -1,5 +1,5 @@
 from datetime import date, timedelta
-from typing import Any, List, Tuple, Dict
+from typing import List, Tuple, Dict
 from services.database import get_all_entries
 from utils.config import DAYS_OF_WEEK, GARDEN_PLANTS, MOOD_ORDER
 

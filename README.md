@@ -2,6 +2,12 @@
 
 **Where thoughts come to rest** — An AI-powered journaling companion that helps you reflect, explore, and grow.
 
+Leaflet reimagines journaling as a conversation, not a chore. By pairing AI-generated prompts with empathetic responses, it lowers the barrier for self-reflection while keeping users in control of their thoughts.
+
+## 🎬 Demo Video
+
+[Watch Leaflet in action!](YOUR_VIDEO_LINK_HERE)
+
 ## Features
 
 - **Guided Journaling**: Three modes — Reflective (AI analyzes patterns), Explore (random prompts), Free Write
@@ -36,10 +42,11 @@ OPENAI_API_KEY=your_openai_api_key_here
 ```
 
 ### 5. (Optional) Populate Demo Data
+If you want to test the app with sample entries (useful for exploring features like Insights and History):
 ```bash
 python scripts/populate_demo.py
 ```
-> ⚠️ **Warning:** This script wipes all existing journal entries and replaces them with demo data.
+> ⚠️ **Warning:** This wipes all existing journal entries and replaces them with demo data.
 
 ### 6. Run the App
 ```bash
@@ -55,11 +62,11 @@ The app will open at `http://localhost:8501`
 ```
 ├── app.py                 # Main Streamlit app
 ├── requirements.txt       # Dependencies
-├── .env                   # API keys (not committed)
+├── .env                   # API keys
 ├── journal.db             # SQLite database (auto-created)
 │
 ├── services/
-│   ├── leafy.py           # AI companion (OpenAI integration)
+│   ├── leafy.py           # Leady, your AI companion (OpenAI integration)
 │   └── database.py        # SQLite operations
 │
 ├── ui/
@@ -92,3 +99,14 @@ pytest tests/ -v
 - **AI**: OpenAI GPT-4o-mini
 - **Database**: SQLite
 - **Language**: Python 3.13
+
+## Privacy & Trust
+
+- **Local Storage**: All journal entries stored locally in SQLite — nothing saved to external servers
+- **No Accounts**: No sign-up needed — just open and write
+- **Non-judgmental AI**: Leafy is prompted to be warm, supportive, and never critical
+- **OpenAI Privacy**: Journal entries sent to OpenAI for personalized insights — no personal data collected
+
+## Documentation
+
+For detailed breakdown of the architecture, design decisions, and future enhancements, see [DOCUMENTATION.md](DOCUMENTATION.md) 

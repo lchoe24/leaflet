@@ -6,7 +6,7 @@ Leaflet reimagines journaling as a conversation, not a chore. By pairing AI-gene
 
 ## 🎬 Demo Video
 
-[Watch Leaflet in action!](YOUR_VIDEO_LINK_HERE)
+[Watch Leaflet in action!](https://youtu.be/6AD9RPhQwpo)
 
 ## Features
 

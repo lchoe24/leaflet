@@ -45,13 +45,26 @@
 | **Mood Summary** | Identifies patterns and trends over 30 days |
 | **Daily Challenges** | Creates personalized micro-tasks based on past entries — encourages consistent journaling by giving users something to reflect on |
 
-### Prompt Design
+### Prompt Engineering
 
-Prompts are structured to:
-- Be specific (reference actual user data)
-- Sound like a caring friend, not a therapist
-- Avoid generic phrases
-- Match warmth level to user's mood
+All prompts follow a consistent structure using prompt engineering best practices:
+
+| Technique | Implementation |
+|-----------|----------------|
+| **Structured Format** | Every prompt uses CONTEXT → TASK → EXAMPLES → RULES → OUTPUT |
+| **Few-Shot Examples** | Good and bad examples guide the AI toward desired responses |
+| **System Prompt** | Defines Leafy's personality, tone, and guardrails |
+| **Guardrails** | Prevents unwanted behavior (no diagnoses, no clichés, no "As an AI...") |
+| **Output Constraints** | Explicit word limits and format requirements |
+
+**Example prompt structure:**
+```
+CONTEXT: [What data is provided]
+TASK: [What to do]
+EXAMPLES: [Good vs bad outputs]
+RULES: [Constraints and tone]
+OUTPUT: [Expected format]
+```
 
 ---
 
